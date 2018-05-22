@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>PortFolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+	  position:relative;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  .card {
+	 background-color:#ffffff;
+	 border-color : #1abc9c; /* Green */
+  }
+  
+  .card-projects
+  {
+	background-color:#ffffff;
+	border-color : #1abc9c; /* Green */
+	height:400px;
+	
+  }
+  
+  .headers{
+	color:#34495E;/* Dark blue */
+	text-align: center;
+  }
+  
+  .flex-container {
+  display: flex;
+}
+
+ .table-contact{
+ width:100%;
+ }
+ 
+ label{
+ color:#34495E;/* Dark blue */
+ 
+ }
+ 
+ .button-submit{
+ background-color: #1abc9c; /* Green */
+ width:100%;
+ color:#ffffff;
+ font-weight:1000;
+ }
+ 
+ .label-personal-info{
+	font-size: 14px;
+    font-weight: bold;
+    color: #1B4F72;
+ }
+ 
+  .text-personal-info{
+	font-size: 13px;
+    font-weight: bold;
+    color: #145A32;
+ }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm bg-light justify-content-end fixed-top">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#personalInfo" style="color:#2f2f2f;">PROFILE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#work" style="color:#2f2f2f;">WORK</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#qualifications" style="color:#2f2f2f;">QUALIFICATIONS</a>
+    </li>
+	 <li class="nav-item">
+      <a class="nav-link" href="#contact" style="color:#2f2f2f;">CONTACT</a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+<!-- First Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Who Am I?</h3>
+  <img src="C:\Users\mosengup.ORADEV\Downloads\profilePic.jpg" class="img-responsive rounded-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>Front-End and Web Application Developer</h3>
+  <p>A technology enthusiast having 3.5 years of experience in developing software products and web applications. Proficient in Front-End and Back-End.  </p>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-3 text-center" id="personalInfo">
+  <h3 class="margin">Personal Info</h3>
+  <div class="row">
+  <div class="col-sm-3 card">
+  <h4>Personal Info</h4>
+  <br>
+  <table>
+   <tr>
+	<td style="width:25%"><p class="label-personal-info">Name:</p></td>
+	<td style="width:75%"><p class="text-personal-info">Mohini Sengupta</p></td>
+   <tr>
+   <tr>
+	<td style="width:25%"><p class="label-personal-info">Date of Birth:</p></td>
+	<td style="width:75%"><p class="text-personal-info">19-12-1989</p></td>
+   <tr>
+   <tr>
+	<td style="width:25%"><p class="label-personal-info">Email:</p></td>
+	<td style="width:75%"><p class="text-personal-info">mohinisengupta19@gmail.com</p></td>
+   <tr>
+   <tr>
+	<td style="width:25%"><p class="label-personal-info">Contact:</p></td>
+	<td style="width:75%"><p class="text-personal-info">9674333371</p></td>
+   <tr>
+   <tr>
+	<td style="width:25%"><p class="label-personal-info">Location:</p></td>
+	<td style="width:75%"><p class="text-personal-info">Hyderabad,India</p></td>
+   <tr>
+   
+   
+  </table>
+  </div>
+  <div class="col-sm-9">
+  <h4>Skill Set</h4>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%;background-color:#283747;">React Js</div>
+  </div>
+  <br>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%;background-color:#1B4F72">JavaScript</div>
+  </div>
+  <br>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%;background-color:#145A32">Bootstrap</div>
+  </div>
+  <br>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%;background-color:#27AE60">HTML & CSS</div>
+  </div>
+  <br>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%;background-color:#8E44AD">JSP & JSF</div>
+  </div>
+  <br>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%;background-color:#E74C3C">Core Java & Servlets</div>
+   </div>
+ <br>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%;background-color:#E67E22">SQL/PLSQL</div>
+  </div>
+	<br>
+  </div>
+</div>
+</div>
+
+
+<!-- Third Container -->
+<h3 class="headers" id="work">Work</h3>
+<div class="jumbotron jumbotron-fluid bg-1 text-center" id="work">
+  <div class="container">
+    <h3 style="font-weight:1000">Professional Experience</h3>
+    <br>
+    <dl>
+      <dt>TATA CONSULTANCY SERVICES</dt>
+      <dd>-Systems Engineer</dd>
+      <p>Worked both as Front_End and Back-end Developer(Front-End 80%/ Back-End 20%) using Angular JS, JSF, JavaScript, HTML & CSS, Core Java, J2EE , ADF and SQL </p>
+	   <br>
+      <dt>ORACLE INDIA PRIVATE LIMITED</dt>
+      <dd>-Applications Engineer</dd>
+      <p>Worked both as Front_End and Back-end Developer(Front-End 80%/ Back-End 20%) using  JSF, JavaScript, HTML & CSS, Core Java, ADF SQL</p>
+	  <br>
+    </dl>
+  </div>
+</div>
+
+<!-- Fourth Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h4 class="margin" style="color:#1abc9c;font-weight:500">Projects Worked On</h4><br>
+  <div class="row">
+    <div class="col-sm-3 card-projects">
+	  <p3 style="color:#34495E;font-weight:500">HSDL</p3>
+	  <br><br>
+      <p class="text-left">HCM Spreadsheet Data Loader is a framework, or infrastructure, providing bulk data loading capabilities using Microsoft Excel interface for any registered Fusion HCM integration-enabled business object. It allows customers to import/export data from legacy systems to Oracle Database.</p>
+     
+    </div>
+    <div class="col-sm-3 card-projects"> 
+      <p3 style="color:#34495E;font-weight:500">HCM CheckList</p3>
+	  <br><br>
+      <p class="text-left">Checklist is a product part of Core HR application, enabling users to link certain tasks to an event (through a template) as well as initiating the list of tasks to perform once this event occurs to someone in the company (through allocation).</p>
+      
+     
+    </div>
+    <div class="col-sm-3 card-projects"> 
+      <p3 style="color:#34495E;font-weight:500">Canon Self Service Portal</p3>
+	  <br><br>
+      <p class="text-left">Canon Self Service Portal operates in 11 different locales. This Portall lets an user to register himself/herself and have his/her own account, in order to avail the various kinds of services provided by the Portal.</p>
+      
+      
+    </div>
+	<div class="col-sm-3 card-projects">
+	  <p3 style="color:#34495E;font-weight:500">InQuira</p3>
+	  <br><br>
+      <p class="text-left">HCM Spreadsheet Data Loader is a framework, or infrastructure, providing bulk data loading capabilities using Microsoft Excel interface for any registered Fusion HCM integration-enabled business object. It allows customers to import/export data from legacy systems to Oracle Database.</p>
+      
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-sm-3">
+	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#hsdlModal">Know More</button>
+  </div>
+  <div class="col-sm-3">
+	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#checklistModal">Know More</button>
+  </div>
+  <div class="col-sm-3">
+	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#canonModal">Know More</button>
+  </div>
+  <div class="col-sm-3">
+	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#inquiraModal">Know More</button>
+  </div>
+  </div>
+  
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    
+</div>
+
+
+<!-- Fifth Container -->
+<h3 class="headers" id="qualifications">Academic Qualifications</h3>
+<div class="jumbotron jumbotron-fluid bg-1 ">
+  <div class="container">
+    <h3 style="font-weight:1000">Education</h3>
+    <br>
+    <dl>
+      <dt><img src="C:\Users\mosengup.ORADEV\Downloads\Documents\graduates-cap_icon.jpg" class="img-responsive rounded-circle " style="display:inline" alt="Bird" width="30" height="30">&nbsp;Masters of Computer Applications&nbsp;(MCA 2011-2014)</dt>
+      <dd>&nbsp;&nbsp;-University Of Calcutta</dd>
+	  <span class="glyphicon glyphicon-calendar"></span>
+      
+	   <br>
+      <dt><img src="C:\Users\mosengup.ORADEV\Downloads\Documents\graduates-cap_icon.jpg" class="img-responsive rounded-circle " style="display:inline" alt="Bird" width="30" height="30">&nbsp;Bachelor of Science&nbsp;(B.Sc Honors in Computer Science 2008-2011)</dt>
+      <dd>&nbsp;&nbsp;-University Of Calcutta</dd>
+      
+	  <br>
+	  <dt><img src="C:\Users\mosengup.ORADEV\Downloads\Documents\book_icon.png" class="img-responsive rounded-circle " style="display:inline" alt="Bird" width="30" height="30">&nbsp;I.S.C&nbsp;(2008)</dt>
+      <dd>&nbsp;&nbsp;-St.Xavier's Institution</dd>
+      
+	  <br>
+	  <dt><img src="C:\Users\mosengup.ORADEV\Downloads\Documents\book_icon.png" class="img-responsive rounded-circle " style="display:inline" alt="Bird" width="30" height="30">&nbsp;I.C.S.E&nbsp;(2006)</dt>
+      <dd>&nbsp;&nbsp;-St.Xavier's Institution</dd>
+      
+	  <br>
+    </dl>
+  </div>
+</div>
+
+
+ <h3 class="headers" id="contact">Contact</h3>
+  
+<div class="container">
+  <h4 style="color:#1abc9c">Contact Me</h4>
+  <form action="/action_page.php">
+  <table class="table-contact">
+  <tr >
+  <td style="width:40%">
+  <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject:</label>
+      <input type="text" class="form-control" id="subject" placeholder="Enter subject" name="subject">
+    </div>
+   </td>
+   <td style="width:5%"></td>
+	<td style="width:55%">
+	<div class="form-group">
+      <label for="message">How may I help you?</label>
+      <textarea class="form-control" id="message" placeholder="Enter message" name="message" rows="10"></textarea>
+    </div>
+	<td>
+	</tr>
+	</table>
+    <button type="submit" class="btn  button-submit">Submit</button>
+  </form>
+</div>
+<br>
+<div class="container">
+  <h4 style="color:#52BE80">Contact Info</h4>
+  
+ </div>
+<br>
+
+<!-- Footer -->
+<!--<footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+</footer>-->
+
+</body>
+</html>
