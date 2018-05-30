@@ -1,0 +1,148 @@
+body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
+  position:relative;
+}
+
+p {font-size: 16px}
+
+li {
+  position: sticky;
+  float: right;
+}
+
+label{
+  color:#34495E;/* Dark blue */
+ }
+ 
+h4{
+	color:#1abc9c; /* Green */
+ }
+
+.margin {margin-bottom: 45px;}
+
+ 
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+ }
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+ }
+  
+.navbar-nav  li a:hover {
+  color: #1abc9c !important;
+ }
+ 
+
+ 
+ 
+.card {
+  background-color:#ffffff;
+  border-color : #1abc9c; /* Green */
+ }
+  
+.card-projects
+  {
+	background-color:#ffffff;
+	border-color : #1abc9c; /* Green */
+	height:400px;
+	
+  }
+  
+.headers{
+	color:#34495E;/* Dark blue */
+	text-align: center;
+ }
+  
+.flex-container {
+  display: flex;
+}
+
+.table-contact{
+  width:100%;
+ }
+ 
+ 
+.button-submit{
+  background-color: #1abc9c; /* Green */
+  width:100%;
+  color:#ffffff;
+  font-weight:1000;
+ }
+ 
+ .button-submit:hover{
+  background-color: #1E8449; /* Green */
+  width:100%;
+  color:#ffffff;
+  font-weight:1000;
+ }
+ 
+.label-personal-info{
+  font-size: 14px;
+  font-weight: bold;
+  color: #1B4F72;
+ }
+ 
+.text-personal-info{
+  font-size: 13px;
+  font-weight: bold;
+  color: #145A32;
+ }
+ 
+.progressdivpos{
+  position:relative;
+ }
+ 
+.progresspercent{
+  position:absolute;
+  right:10px;
+}
+ 
+.modaltop{
+  padding-top:100px;
+}
+#react{
+  width:10%;
+  background-color:#283747;
+  transition: width 2s;
+}
+
+
+
+#javascript{
+  width:10%;
+  background-color:#1B4F72;
+}
+
+#bootstrap{
+  width:10%;
+  background-color:#145A32;
+}
+
+#htmlcss{
+  width:10%;
+  background-color:#27AE60;
+}
+
+#jsp{
+  width:10%;
+  background-color:#8E44AD;
+}
+
+#java{
+  width:10%;
+  background-color:#E74C3C;
+}
+
+#sql{
+  width:10%;
+  background-color:#E67E22;
+}

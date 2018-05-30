@@ -1,104 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-  <title>PortFolio</title>
+  <title>Software Engineer PortFolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="portfoliostyle.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-  body {
-      font: 20px Montserrat, sans-serif;
-      line-height: 1.8;
-      color: #f5f6f7;
-	  position:relative;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-      background-color: #1abc9c; /* Green */
-      color: #ffffff;
-  }
-  .bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-  }
-  .bg-3 { 
-      background-color: #ffffff; /* White */
-      color: #555555;
-  }
-  .bg-4 { 
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
-  }
-  .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
-  }
-  .navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-      color: #1abc9c !important;
-  }
-  .card {
-	 background-color:#ffffff;
-	 border-color : #1abc9c; /* Green */
-  }
+ .bg-1 { 
+  background-color: #1abc9c; /* Green */
+  color: #ffffff;
+ }
   
-  .card-projects
-  {
-	background-color:#ffffff;
-	border-color : #1abc9c; /* Green */
-	height:400px;
+.bg-2 { 
+  background-color: #474e5d; /* Dark Blue */
+  color: #ffffff;
+ }
+  
+.bg-3 { 
+  background-color: #ffffff; /* White */
+  color: #555555;
+ }
+ 
+.bg-4 { 
+  background-color: #2f2f2f; /* Black Gray */
+  color: #fff;
+ }
+ 
+ h4{
+	color:#1abc9c; /* Green */
+ }
+ 
+.fade:not(.show) {
+    opacity:1!important;
 	
-  }
-  
-  .headers{
-	color:#34495E;/* Dark blue */
-	text-align: center;
-  }
-  
-  .flex-container {
-  display: flex;
 }
 
- .table-contact{
- width:100%;
- }
- 
- label{
- color:#34495E;/* Dark blue */
- 
- }
- 
- .button-submit{
- background-color: #1abc9c; /* Green */
- width:100%;
- color:#ffffff;
- font-weight:1000;
- }
- 
- .label-personal-info{
-	font-size: 14px;
-    font-weight: bold;
-    color: #1B4F72;
- }
- 
-  .text-personal-info{
-	font-size: 13px;
-    font-weight: bold;
-    color: #145A32;
- }
   </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -127,16 +68,17 @@
 <!-- First Container -->
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin">Who Am I?</h3>
-  <img src="C:\Users\mosengup.ORADEV\Downloads\profilePic.jpg" class="img-responsive rounded-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <img src="profilePic.jpg" class="img-responsive rounded-circle margin" style="display:inline" alt="Bird" width="350" height="350">
   <h3>Front-End and Web Application Developer</h3>
   <p>A technology enthusiast having 3.5 years of experience in developing software products and web applications. Proficient in Front-End and Back-End.  </p>
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-3 text-center" id="personalInfo">
+<div class="container-fluid bg-3 text-center" id="personalInfo" onmouseover=changeReact()>
   <h3 class="margin">Personal Info</h3>
   <div class="row">
   <div class="col-sm-3 card">
+  <br>
   <h4>Personal Info</h4>
   <br>
   <table>
@@ -164,36 +106,43 @@
    
   </table>
   </div>
-  <div class="col-sm-9">
+  <div class="col-sm-9" >
   <h4>Skill Set</h4>
-  <div class="progress">
-    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%;background-color:#283747;">React Js</div>
+  <div class="progress progressdivpos">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" id="react">React Js</div>
+	<span class="progresspercent">60%</span>
   </div>
   <br>
-  <div class="progress">
-    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%;background-color:#1B4F72">JavaScript</div>
+  <div class="progress progressdivpos">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" id="javascript">JavaScript</div>
+	<span class="progresspercent">70%</span>
   </div>
   <br>
-  <div class="progress">
-    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%;background-color:#145A32">Bootstrap</div>
+  <div class="progress progressdivpos">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" id="bootstrap">Bootstrap</div>
+	<span class="progresspercent">70%</span>
   </div>
   <br>
-  <div class="progress">
-    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%;background-color:#27AE60">HTML & CSS</div>
+  <div class="progress progressdivpos">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" id="htmlcss">HTML & CSS</div>
+	<span class="progresspercent">70%</span>
   </div>
   <br>
-  <div class="progress">
-    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%;background-color:#8E44AD">JSP & JSF</div>
+  <div class="progress progressdivpos">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" id="jsp">JSP & JSF</div>
+	<span class="progresspercent">60%</span>
   </div>
   <br>
-  <div class="progress">
-    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%;background-color:#E74C3C">Core Java & Servlets</div>
-   </div>
- <br>
-  <div class="progress">
-    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%;background-color:#E67E22">SQL/PLSQL</div>
+  <div class="progress progressdivpos">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" id="java">Core Java & Servlets</div>
+	<span class="progresspercent">80%</span>
   </div>
-	<br>
+  <br>
+  <div class="progress progressdivpos">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" id="sql">SQL/PLSQL</div>
+	<span class="progresspercent">60%</span>
+  </div>
+  <br>
   </div>
 </div>
 </div>
@@ -203,7 +152,7 @@
 <h3 class="headers" id="work">Work</h3>
 <div class="jumbotron jumbotron-fluid bg-1 text-center" id="work">
   <div class="container">
-    <h3 style="font-weight:1000">Professional Experience</h3>
+    <h3 >Professional Experience</h3>
     <br>
     <dl>
       <dt>TATA CONSULTANCY SERVICES</dt>
@@ -220,7 +169,7 @@
 
 <!-- Fourth Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
-  <h4 class="margin" style="color:#1abc9c;font-weight:500">Projects Worked On</h4><br>
+  <h4 class="margin" style="font-weight:500">Projects Worked On</h4><br>
   <div class="row">
     <div class="col-sm-3 card-projects">
 	  <p3 style="color:#34495E;font-weight:500">HSDL</p3>
@@ -251,7 +200,7 @@
   </div>
   <div class="row">
   <div class="col-sm-3">
-	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#hsdlModal">Know More</button>
+	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#spreadsheetModal">Know More</button>
   </div>
   <div class="col-sm-3">
 	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#checklistModal">Know More</button>
@@ -265,19 +214,110 @@
   </div>
   
   <!-- The Modal -->
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog">
+  <div class="modal fade modaltop" id="spreadsheetModal" data-backdrop="false"  >
+    <div class="modal-dialog" >
       <div class="modal-content">
       
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
+          <h4 class="modal-title">HCM Spreadsheet DataLoader</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         
         <!-- Modal body -->
-        <div class="modal-body">
-          Modal body..
+        <div class="modal-body" style="text-align: justify;word-wrap: break-word;line-height: 1.2">
+         	<p>Used Java base for client creation and connection to InfoManager in order to handle articles and Knowledge Management.
+			\Implemented Website crawling and indexing using custom crawler
+			Worked on Client interactions for various requirements.
+			Analysis and fixing of various defects for the bulk upload tool.
+			FCK Editor Customization and development.</p>	
+			<p><b>Special Learning:</b> Learnt XSLT in order to transform XML documents into other formats.</p>
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modaltop" id="checklistModal" data-backdrop="false"  >
+    <div class="modal-dialog" >
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">HCM Spreadsheet DataLoader</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body" style="text-align: justify;word-wrap: break-word;line-height: 1.2">
+         	<p>Used Java base for client creation and connection to InfoManager in order to handle articles and Knowledge Management.
+			\Implemented Website crawling and indexing using custom crawler
+			Worked on Client interactions for various requirements.
+			Analysis and fixing of various defects for the bulk upload tool.
+			FCK Editor Customization and development.</p>	
+			<p><b>Special Learning:</b> Learnt XSLT in order to transform XML documents into other formats.</p>
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modaltop" id="canonModal" data-backdrop="false"  >
+    <div class="modal-dialog" >
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Canon Self Service Portal</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body" style="text-align: justify;word-wrap: break-word;line-height: 1">
+		   <p>Worked on all the layers of ADF Framework In order to implement the Frontend.
+		   Implemented integration with SOA 
+		   Implemented security features in the Application</p>
+		  
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modaltop" id="inquiraModal" data-backdrop="false"  >
+    <div class="modal-dialog" >
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">InQuira Knowledge Management</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body" style="text-align: justify;word-wrap: break-word;line-height: 1.2">
+         	<p>Used Java base for client creation and connection to InfoManager in order to handle articles and Knowledge Management.
+			\Implemented Website crawling and indexing using custom crawler
+			Worked on Client interactions for various requirements.
+			Analysis and fixing of various defects for the bulk upload tool.
+			FCK Editor Customization and development.</p>	
+			<p><b>Special Learning:</b> Learnt XSLT in order to transform XML documents into other formats.</p>
+
         </div>
         
         <!-- Modal footer -->
@@ -299,20 +339,20 @@
     <h3 style="font-weight:1000">Education</h3>
     <br>
     <dl>
-      <dt><img src="C:\Users\mosengup.ORADEV\Downloads\Documents\graduates-cap_icon.jpg" class="img-responsive rounded-circle " style="display:inline" alt="Bird" width="30" height="30">&nbsp;Masters of Computer Applications&nbsp;(MCA 2011-2014)</dt>
+      <dt><img src="graduates-cap_icon.jpg" class="img-responsive rounded-circle " style="display:inline" alt="Bird" width="30" height="30">&nbsp;Masters of Computer Applications&nbsp;(MCA 2011-2014)</dt>
       <dd>&nbsp;&nbsp;-University Of Calcutta</dd>
 	  <span class="glyphicon glyphicon-calendar"></span>
       
 	   <br>
-      <dt><img src="C:\Users\mosengup.ORADEV\Downloads\Documents\graduates-cap_icon.jpg" class="img-responsive rounded-circle " style="display:inline" alt="Bird" width="30" height="30">&nbsp;Bachelor of Science&nbsp;(B.Sc Honors in Computer Science 2008-2011)</dt>
+      <dt><img src="graduates-cap_icon.jpg" class="img-responsive rounded-circle " style="display:inline" alt="Bird" width="30" height="30">&nbsp;Bachelor of Science&nbsp;(B.Sc Honors in Computer Science 2008-2011)</dt>
       <dd>&nbsp;&nbsp;-University Of Calcutta</dd>
       
 	  <br>
-	  <dt><img src="C:\Users\mosengup.ORADEV\Downloads\Documents\book_icon.png" class="img-responsive rounded-circle " style="display:inline" alt="Bird" width="30" height="30">&nbsp;I.S.C&nbsp;(2008)</dt>
+	  <dt><img src="book_icon.png" class="img-responsive rounded-circle " style="display:inline" alt="Bird" width="30" height="30">&nbsp;I.S.C&nbsp;(2008)</dt>
       <dd>&nbsp;&nbsp;-St.Xavier's Institution</dd>
       
 	  <br>
-	  <dt><img src="C:\Users\mosengup.ORADEV\Downloads\Documents\book_icon.png" class="img-responsive rounded-circle " style="display:inline" alt="Bird" width="30" height="30">&nbsp;I.C.S.E&nbsp;(2006)</dt>
+	  <dt><img src="book_icon.png" class="img-responsive rounded-circle " style="display:inline" alt="Bird" width="30" height="30">&nbsp;I.C.S.E&nbsp;(2006)</dt>
       <dd>&nbsp;&nbsp;-St.Xavier's Institution</dd>
       
 	  <br>
@@ -324,7 +364,7 @@
  <h3 class="headers" id="contact">Contact</h3>
   
 <div class="container">
-  <h4 style="color:#1abc9c">Contact Me</h4>
+  <h4 >Contact Me</h4>
   <form action="/action_page.php">
   <table class="table-contact">
   <tr >
@@ -346,7 +386,7 @@
 	<td style="width:55%">
 	<div class="form-group">
       <label for="message">How may I help you?</label>
-      <textarea class="form-control" id="message" placeholder="Enter message" name="message" rows="10"></textarea>
+      <textarea class="form-control" id="message" placeholder="Enter message" name="message" rows="8"></textarea>
     </div>
 	<td>
 	</tr>
@@ -356,7 +396,7 @@
 </div>
 <br>
 <div class="container">
-  <h4 style="color:#52BE80">Contact Info</h4>
+  <h4 >Contact Info</h4>
   
  </div>
 <br>
@@ -366,5 +406,18 @@
   <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
 </footer>-->
 
+
+<script>
+function changeReact(){
+	 document.getElementById("react").style.width = "60%";
+	 document.getElementById("javascript").style.width = "70%";
+	 document.getElementById("bootstrap").style.width = "70%";
+	 document.getElementById("htmlcss").style.width = "70%";
+	 document.getElementById("jsp").style.width = "60%";
+	 document.getElementById("java").style.width = "80%";
+	 document.getElementById("sql").style.width = "60%";
+	 
+}
+</script>
 </body>
 </html>
